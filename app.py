@@ -14,10 +14,6 @@ if "step" not in st.session_state:
     st.session_state.step = 0
 if "risposte" not in st.session_state:
     st.session_state.risposte = {}
-
-# Database delle 20 domande
-domande = [
-    {
         "categoria": "🗑️ Inquinamento e Rifiuti",
         "scenario": "1. Durante una perlustrazione nei pressi dei campi verso Monteleone, trovi un accumulo di macerie edilizie e plastica. Come intervieni?",
         "opzioni": [
