@@ -14,6 +14,10 @@ if "step" not in st.session_state:
     st.session_state.step = 0
 if "risposte" not in st.session_state:
     st.session_state.risposte = {}
+
+# Database delle 20 domande
+domande = [
+    {
         "categoria": "🗑️ Inquinamento e Rifiuti",
         "scenario": "1. Durante una perlustrazione nei pressi dei campi verso Monteleone, trovi un accumulo di macerie edilizie e plastica. Come intervieni?",
         "opzioni": [
@@ -269,3 +273,22 @@ if st.session_state.step < len(domande):
                 st.session_state.step -= 1
                 st.rerun()
 
+else:
+    st.balloons()
+    st.header("🏆 Pattuglia Completata!")
+    punteggio_max = len(domande) * 10
+    st.write(f"Il tuo punteggio finale è: **{st.session_state.punteggio} / {punteggio_max} punti**.")
+    
+    percentuale = (st.session_state.punteggio / punteggio_max) * 100
+    
+    if percentuale == 100:
+        st.success("🥇 ECCELLENTE! Sei una Guardia Ecologica Volontaria modello per Inverno e Monteleone!")
+    elif percentuale >= 70:
+        st.info("🥈 BUON LAVORO! Hai una buona conoscenza del regolamento ambientale locale.")
+    else:
+        st.warning("🥉 SERVE RIPASSO! Rileggi le norme ambientali prima di tornare in pattuglia.")
+
+    if st.button("🔄 Ricomincia il Gioco"):
+        st.session_state.punteggio = 0
+        st.session_state.step = 0
+        st.rerun()
