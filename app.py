@@ -292,3 +292,36 @@ else:
         st.session_state.punteggio = 0
         st.session_state.step = 0
         st.rerun()
+            {
+        "categoria": "🐝 Apicoltura e Insetti Utili",
+        "scenario": "21. Trovi dei favi naturali di api in un pilone vicino al Parco Giardino. Un cittadino vuole distruggerli con un insetticida. Come intervieni?",
+        "opzioni": [
+            "Lo aiuti a spruzzare l'insetticida per sicurezza.",
+            "Spieghi che le api sono protette e fondamentali per l'ecosistema, invitando a contattare un apicoltore per il recupero sicuro.",
+            "Dai fuoco al pilone."
+        ],
+        "corretta": 1,
+        "spiegazione": "Le api e gli impollinatori sono tutelati; la rimozione o il recupero degli sciami deve essere effettuato da personale esperto senza abbatterle."
+    },
+    {
+        "categoria": "🌊 Tutela Argini e Fiumi",
+        "scenario": "22. Un residente ha scavato un fossato privato modificando il corso di un canale di scolo comunale senza permessi. Cosa fai?",
+        "opzioni": [
+            "Rilevi l'opera idraulica abusiva che modifica il regime delle acque e la segnali al Consorzio di Bonifica e al Comune.",
+            "Gli chiedi di scavare un altro canale anche per il tuo giardino.",
+            "Fai finta di niente, l'acqua scorre comunque."
+        ],
+        "corretta": 0,
+        "spiegazione": "Le modifiche ai reticoli idrici superficiali richiedono specifiche autorizzazioni per prevenire rischi idrogeologici e allagamenti."
+    },
+    {
+        "categoria": "🪵 Legna da Ardere",
+        "scenario": "23. Un cittadino sta raccogliendo legna secca caduta all'interno di una riserva naturale regionale protetta. È consentito?",
+        "opzioni": [
+            "Sì, la legna caduta si può prendere liberamente ovunque.",
+            "No, nelle aree protette anche il legno morto a terra costituisce habitat essenziale per insetti decompositori e biodiversità.",
+            "Sì, purché la carichi a mano senza usare carri."
+        ],
+        "corretta": 1,
+        "spiegazione": "Nelle aree a riserva naturale rigida la legna morta decomponendosi arricchisce il suolo e sostiene la catena alimentare."
+    }
